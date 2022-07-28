@@ -1,5 +1,4 @@
 # Library containting Node, Linked List, Doubly Link List, Stack and Queue data structures
-from multiprocessing import current_process
 
 
 class Node:
@@ -19,6 +18,15 @@ class Node:
 
     def set_next_node(self, next_node):
         self.next_node = next_node
+
+
+class DoubleNode(Node):
+    def __init__(self):
+        super().__init__()
+        self.previous_node = None
+    
+    def set_prev_node(self, prev_node):
+        self.previous_node = prev_node
 
 
 class LinkedList:
@@ -84,7 +92,18 @@ class LinkedList:
     
     
 
-        
+
+class DoublyLinkedList(LinkedList):
+    
+    def __init__(self, head=None):
+        super().__init__(head)
+        self.tail = None
+    
+    # need to implement/override insert and remove
+
+
+
+
         
 
 

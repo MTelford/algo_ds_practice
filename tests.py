@@ -1,4 +1,4 @@
-from data_structures import LinkedList
+from data_structures import DoubleNode, DoublyLinkedList, LinkedList
 
 ll = LinkedList()
 
@@ -13,7 +13,10 @@ print(ll.stringify_list())
 
 ll.peek()
 
+# dll = DoublyLinkedList()
 
+# print(dll.head)
+# print(dll.stringify_list())
 
 
 
